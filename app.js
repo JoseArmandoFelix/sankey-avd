@@ -25,17 +25,17 @@ d3.csv("../dataset.csv").then(function(data){
         nodeLabelPadding = 6, // horizontal separation between node and label
         nodeStroke = "currentColor", // stroke around node rects
         nodeStrokeWidth, // width of stroke around node rects, in pixels
-        nodeStrokeOpacity, // opacity of stroke around node rects
+        nodeStrokeOpacity = 0.5, // opacity of stroke around node rects
         nodeStrokeLinejoin, // line join for stroke around node rects
         linkSource = ({source}) => source, // given d in links, returns a node identifier string
         linkTarget = ({target}) => target, // given d in links, returns a node identifier string
         linkValue = ({value}) => value, // given d in links, returns the quantitative value
         linkPath = d3Sankey.sankeyLinkHorizontal(), // given d in (computed) links, returns the SVG path
         linkTitle = d => `${d.source.id} → ${d.target.id}\n${format(d.value)}`, // given d in (computed) links
-        linkColor = "source-target", // source, target, source-target, or static color
-        linkStrokeOpacity = 0.5, // link stroke opacity
+        linkColor = "#E4E4E4", // source, target, source-target, or static color
+        linkStrokeOpacity = 1, // link stroke opacity
         linkMixBlendMode = "multiply", // link blending mode
-        colors = d3.schemeTableau10, // array of colors
+        colors = ["#E4E4E4"], // array of colors
         width = 640, // outer width, in pixels
         height = 400, // outer height, in pixels
         marginTop = 5, // top margin, in pixels
@@ -160,15 +160,11 @@ d3.csv("../dataset.csv").then(function(data){
       }
     
     const cont = document.querySelector(".container");
-    var colorsArray = ["#D5D4D4"];
 
     var chart = SankeyChart({
     links: sankeyData
     }, {
     nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
-    nodeAlign: d3.sankeyCenter, // e.g., d3.sankeyJustify; set by input above
-    linkColor: "#C4C4C4", // e.g., "source" or "target"; set by input above
-    color: colorsArray,
     format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
     width: 800,
     height: 600,
@@ -181,28 +177,55 @@ d3.csv("../dataset.csv").then(function(data){
 
     // console.log(nodes);
     // console.log(links);
-
-    // links.forEach(function(element) {
-    //   console.log(element.innerHTML);
-    // });
     
     nodes.forEach(function(element) {
+      let sourceLinks = element.__data__.sourceLinks;
+      let targetLinks = element.__data__.targetLinks;
+
       element.addEventListener("mouseover", function( event ) {
         event.target.style.fill = "#33A16C";
+        
+        sourceLinks.forEach(function(element) {
+          links[element.index].style.stroke = "#33A16C";
+          nodes[element.target.index].style.fill = "#33A16C";
+          
+        });
+        
+        targetLinks.forEach(function(element) {
+          links[element.index].style.stroke = "#33A16C";
+          nodes[element.source.index].style.fill = "#33A16C";
+        });
       });
 
       element.addEventListener("mouseleave", function( event ) {
-        event.target.style.fill = "#D5D4D4";
+        event.target.style.fill = "#E4E4E4";
+
+        sourceLinks.forEach(function(element) {
+          links[element.index].style.stroke = "#E4E4E4";
+          nodes[element.target.index].style.fill = "#E4E4E4";
+        });
+
+        targetLinks.forEach(function(element) {
+          links[element.index].style.stroke = "#E4E4E4";
+          nodes[element.source.index].style.fill = "#E4E4E4";
+        });
       });
     });
 
     links.forEach(function(element) {
+      let targetNode = element.__data__.target;
+      let sourceNode = element.__data__.source;
+
       element.addEventListener("mouseover", function( event ) {
         event.target.style.stroke = "#33A16C";
+        nodes[sourceNode.index].style.fill = "#33A16C";
+        nodes[targetNode.index].style.fill = "#33A16C";
       });
 
       element.addEventListener("mouseleave", function( event ) {
-        event.target.style.stroke = "#D5D4D4";
+        event.target.style.stroke = "#E4E4E4";
+        nodes[sourceNode.index].style.fill = "#E4E4E4";
+        nodes[targetNode.index].style.fill = "#E4E4E4";
       });
     });
   
