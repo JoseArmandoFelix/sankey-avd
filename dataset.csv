@@ -1,49 +1,49 @@
 source,target,value
-analisis, excel, 16
-excel, reporte, 1
-figma, diseño ux, 2
-figma, diseño visual, 2
-figma, asesorias y apoyos, 1
-figma, visualización y desarrollo, 1
-figma, sistemas de información, 1
-figma, informe, 1
-figma, dashboard, 1
-figma, cursos y talleres, 3
-figma, diseño web, 1
-illustrator, diseño visual, 3
-illustrator, infografia, 1
-tableau, investigación, 3
-ibm carbon, investigación, 1
-ibm carbon, sistemas de información, 1
-d3, visualización y desarrollo, 1
-d3, dashboard, 1
-after effects, animación-motion, 2
-adobe xd, diseño ux, 1
-html, diseño ux, 1
-css, diseño ux, 1
-gsuite, asesorias y apoyos, 1
-analisis, ivan de la o, 15
-analisis, karely lopez, 1
-diseño ux, ivan de la o, 1
-diseño ux, cutberto gonzalez, 3
-diseño ux, geraldine lopez, 2
-diseño ux, ricardo lopez, 1
-diseño ux, luis salazar, 1
-investigación, jair perez, 4
-diseño visual, ivan de la o, 2
-diseño visual, cutberto gonzalez, 1
-diseño visual, romario garcia, 1
-asesorias y apoyos, ivan de la o, 2
-asesorias y apoyos, jorge urias, 1
-visualización y desarrollo, ival de la o, 1
-visualización y desarrollo, geraldine lopez, 2
-sistemas de información, ivan de la o, 2
-informe, ivan de la o, 2
-dashboard, sergio herrera, 1
-dashboard, gricelda dominguez, 1
-cursos y talleres, ivan de la o, 3
-animación-motion, jair rodriguez, 1
-animación-motion, geovanna bernal, 1
-reporte, ivan de la o, 1
-infografia, paola ramos, 1
-diseño web, ivan de la o, 1
+Ivan de la O,Análisis,15
+Ivan de la O,Sistemas de Información,2
+Ivan de la O,Visualización - Desarrollo Web,1
+Ivan de la O,Diseño Web,1
+Ivan de la O,Diseño UX,1
+Ivan de la O,Cursos y Talleres,1
+Ivan de la O,Asesorías y Apoyos,3
+Ivan de la O,Diseño Visual,2
+Ivan de la O,Reportes,1
+Ivan de la O,Informes,2
+Jair Perez,Investigación,4
+Geraldine Lopez,Visualización - Desarrollo Web,1
+Geraldine Lopez,Diseño UX,1
+Karely López,Análisis,1
+Geovanna Bernal,Animación - Motion Design,1
+Jair Benabé Rodríguez,Animación - Motion Design,1
+Ricardo Lopez,Diseño UX,1
+Cutberto Gonzalez,Diseño UX,2
+Cutberto Gonzalez,Diseño Visual,1
+Luis Fernando Salazar,Diseño UX,1
+Jorge Urias,Asesorías y Apoyos,1
+Romario Garcia,Diseño Visual,1
+Gricelda Dominguez,Dashboards,1
+Sergio Herrera,Dashboards,1
+Paola Margarita Ramos,Infografías,1
+Análisis,Excel,16
+Diseño UX,Figma,3
+Diseño UX,Adobe XD, 1
+Diseño UX,HTML,1
+Diseño UX,CSS,1
+Sistemas de Información,Figma,1
+Sistemas de Información,IBM Carbon,1
+Visualización - Desarrollo Web,D3,1
+Visualización - Desarrollo Web,Figma,1
+Animación - Motion Design,After Effects,2
+Diseño Web,Figma,1
+Cursos y Talleres,Figma,3
+Asesorías y Apoyos,Figma,2
+Asesorías y Apoyos,GSuite,1
+Diseño Visual,Figma,1
+Diseño Visual,Illustrator,2
+Reportes,Excel,1
+Dashboards,D3,1
+Dashboards,Figma,1
+Investigación,Tableau,3
+Investigación,IBM Carbon,1
+Infografías,Illustrator,1
+Informes,Figma,2

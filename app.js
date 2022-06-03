@@ -87,7 +87,7 @@ d3.csv("../dataset.csv").then(function(data){
         const Lt = linkTitle == null ? null : d3.map(links, linkTitle);
       
         // A unique identifier for clip paths (to avoid conflicts).
-        const uid = `O-${Math.random().toString(16).slice(2)}`;
+        const uid = `O-${Math.random().toString(16).slice(3)}`;
       
         const svg = d3.create("svg")
             .attr("width", width)
@@ -168,8 +168,9 @@ d3.csv("../dataset.csv").then(function(data){
     format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
     width: 800,
     height: 600,
-    nodeWidth: 40
+    nodeWidth: 50
     });
+
     cont.appendChild(chart);
 
     let nodes = document.querySelectorAll("rect");
