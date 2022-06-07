@@ -4,7 +4,7 @@
 import * as d3 from 'https://unpkg.com/d3?module';
 import * as d3Sankey from 'https://unpkg.com/d3-sankey@0.12.3?module';
 
-d3.csv("../dataset.csv").then(function(data){
+d3.csv("./dataset.csv").then(function(data){
     let sankeyData = data;
     // console.log(sankeyData);
 
