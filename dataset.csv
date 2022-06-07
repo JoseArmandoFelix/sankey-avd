@@ -1,49 +1,49 @@
 source,target,value
-Ivan de la O,Análisis,15
-Ivan de la O,Sistemas de Información,2
-Ivan de la O,Visualización - Desarrollo Web,1
-Ivan de la O,Diseño Web,1
-Ivan de la O,Diseño UX,1
-Ivan de la O,Cursos y Talleres,1
-Ivan de la O,Asesorías y Apoyos,3
-Ivan de la O,Diseño Visual,2
-Ivan de la O,Reportes,1
-Ivan de la O,Informes,2
-Jair Perez,Investigación,4
-Geraldine Lopez,Visualización - Desarrollo Web,1
-Geraldine Lopez,Diseño UX,1
-Karely López,Análisis,1
-Geovanna Bernal,Animación - Motion Design,1
-Jair Benabé Rodríguez,Animación - Motion Design,1
-Ricardo Lopez,Diseño UX,1
-Cutberto Gonzalez,Diseño UX,2
-Cutberto Gonzalez,Diseño Visual,1
-Luis Fernando Salazar,Diseño UX,1
-Jorge Urias,Asesorías y Apoyos,1
-Romario Garcia,Diseño Visual,1
-Gricelda Dominguez,Dashboards,1
-Sergio Herrera,Dashboards,1
-Paola Margarita Ramos,Infografías,1
-Análisis,Excel,16
-Diseño UX,Figma,3
-Diseño UX,Adobe XD, 1
-Diseño UX,HTML,1
-Diseño UX,CSS,1
-Sistemas de Información,Figma,1
-Sistemas de Información,IBM Carbon,1
-Visualización - Desarrollo Web,D3,1
-Visualización - Desarrollo Web,Figma,1
-Animación - Motion Design,After Effects,2
-Diseño Web,Figma,1
-Cursos y Talleres,Figma,3
-Asesorías y Apoyos,Figma,2
-Asesorías y Apoyos,GSuite,1
-Diseño Visual,Figma,1
-Diseño Visual,Illustrator,2
-Reportes,Excel,1
-Dashboards,D3,1
-Dashboards,Figma,1
-Investigación,Tableau,3
-Investigación,IBM Carbon,1
-Infografías,Illustrator,1
-Informes,Figma,2
+Excel,Análisis,16
+Figma,Diseño UX,3
+Adobe XD,Diseño UX,1
+HTML,Diseño UX,1
+CSS,Diseño UX,1
+Figma,Sistemas de Información,1
+IBM Carbon,Sistemas de Información,1
+D3,Visualización - Desarrollo Web,1
+Figma,Visualización - Desarrollo Web,1
+After Effects,Animación - Motion Design,2
+Figma,Diseño Web,1
+Figma,Cursos y Talleres,3
+Figma,Asesorías y Apoyos,2
+GSuite,Asesorías y Apoyos,1
+Figma,Diseño Visual,1
+Illustrator,Diseño Visual,2
+Excel,Reportes,1
+D3,Dashboards,1
+Figma,Dashboards,1
+Tableau,Investigación,3
+IBM Carbon,Investigación,1
+Illustrator,Infografías,1
+Figma,Informes,2
+Análisis,Ivan de la O,15
+Sistemas de Información,Ivan de la O,2
+Visualización - Desarrollo Web,Ivan de la O,1
+Diseño Web,Ivan de la O,1
+Diseño UX,Ivan de la O,1
+Cursos y Talleres,Ivan de la O,1
+Asesorías y Apoyos,Ivan de la O,3
+Diseño Visual,Ivan de la O,2
+Reportes,Ivan de la O,1
+Informes,Ivan de la O,2
+Investigación,Jair Perez,4
+Visualización - Desarrollo Web,Geraldine Lopez,1
+Diseño UX,Geraldine Lopez,1
+Análisis,Karely López,1
+Animación - Motion Design,Geovanna Bernal,1
+Animación - Motion Design,Jair Benabé Rodríguez,1
+Diseño UX,Ricardo Lopez,1
+Diseño UX,Cutberto Gonzalez,2
+Diseño Visual,Cutberto Gonzalez,1
+Diseño UX,Luis Fernando Salazar,1
+Asesorías y Apoyos,Jorge Urias,1
+Diseño Visual,Romario Garcia,1
+Dashboards,Gricelda Dominguez,1
+Dashboards,Sergio Herrera,1
+Infografías,Paola Margarita Ramos,1

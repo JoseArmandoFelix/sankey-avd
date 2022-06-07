@@ -166,8 +166,8 @@ d3.csv("../dataset.csv").then(function(data){
     }, {
     nodeGroup: d => d.id.split(/\W/)[0], // take first word for color
     format: (f => d => `${f(d)} TWh`)(d3.format(",.1~f")),
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 700,
     nodeWidth: 50
     });
 
