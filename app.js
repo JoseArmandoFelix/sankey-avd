@@ -176,12 +176,14 @@ d3.csv("./dataset.csv").then(function(data){
     let nodes = document.querySelectorAll("rect");
     let links = document.querySelectorAll("path");
 
-    // console.log(nodes);
+    console.log(nodes);
     // console.log(links);
     
     nodes.forEach(function(element) {
       let sourceLinks = element.__data__.sourceLinks;
       let targetLinks = element.__data__.targetLinks;
+      // let sourceLinks2 = element.__data__.sourceLinks
+      console.log(element);
 
       element.addEventListener("mouseover", function( event ) {
         event.target.style.fill = "#33A16C";
@@ -189,12 +191,21 @@ d3.csv("./dataset.csv").then(function(data){
         sourceLinks.forEach(function(element) {
           links[element.index].style.stroke = "#33A16C";
           nodes[element.target.index].style.fill = "#33A16C";
-          
+
+          element.target.sourceLinks.forEach(function(element) {
+            links[element.index].style.stroke = "#33A16C";
+            nodes[element.target.index].style.fill = "#33A16C";
+          });
         });
         
         targetLinks.forEach(function(element) {
           links[element.index].style.stroke = "#33A16C";
           nodes[element.source.index].style.fill = "#33A16C";
+
+          element.source.targetLinks.forEach(function(element) {
+            links[element.index].style.stroke = "#33A16C";
+            nodes[element.source.index].style.fill = "#33A16C";
+          });
         });
       });
 
@@ -204,11 +215,21 @@ d3.csv("./dataset.csv").then(function(data){
         sourceLinks.forEach(function(element) {
           links[element.index].style.stroke = "#E4E4E4";
           nodes[element.target.index].style.fill = "#E4E4E4";
+
+          element.target.sourceLinks.forEach(function(element) {
+            links[element.index].style.stroke = "#E4E4E4";
+            nodes[element.target.index].style.fill = "#E4E4E4";
+          });
         });
 
         targetLinks.forEach(function(element) {
           links[element.index].style.stroke = "#E4E4E4";
           nodes[element.source.index].style.fill = "#E4E4E4";
+
+          element.source.targetLinks.forEach(function(element) {
+            links[element.index].style.stroke = "#E4E4E4";
+            nodes[element.source.index].style.fill = "#E4E4E4";
+          });
         });
       });
     });
